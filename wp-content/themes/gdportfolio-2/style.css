@@ -318,7 +318,13 @@ body {
   margin-bottom: 2%;
 }
 .grid-item img {
+  box-sizing: border-box;
   border: 1px solid #42DCA3;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  /* centers the image */
 }
 .gutter-sizer {
   width: 2%;
@@ -462,14 +468,10 @@ body {
 .single-post h4,
 .single-post h5,
 .single-post h6 {
-  margin: 15px 0 10px 0;
   text-align: center;
 }
 .single-post p {
   font-size: 1em;
-}
-.single-post .entry {
-  margin-top: 5px;
 }
 ul.tags {
   padding: o;
@@ -504,7 +506,5 @@ ul.tags > li {
   }
   .grid-item {
     margin-bottom: 15px;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 }
